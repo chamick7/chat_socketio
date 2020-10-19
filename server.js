@@ -13,11 +13,11 @@ io.on('connection',(socket)=>{
 
     socket.on('join',(data) => {
         socket.join(data.room);
-        console.log(data);
+        io.to(data.room).emit('joinRoom',data);
     });
 
     socket.on('msgToServer',(data) => {
-        io.to(data.room).emit('msgToClient',{name:data.name,msg:data.msg});
+        io.to(data.room).emit('msgToClient',data);
     })
 
 })
