@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+}
+
+.header{
+    height: 5vh;
+    font-size: 20px;
+    font-weight: 700;
+}
+.header span{
+    font-weight: 400;
+    font-size: 16px;
+    color: coral;
+}
+.view{
+    width: 40%;
+    height: 80vh;
+    box-shadow: 2px 2px 2px 2px rgba(177, 177, 177);
+    border-radius: 5px;
+    padding: 10px 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.info{
+    width: 40%;
+    height: 5vh;
+}
+
+.inbox{
+    width: 40%;
+}
+
+#inbox_form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inbox_msg{
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    width: 80%;
+    background-color: white;
+    padding: 5px 10px;
+    outline: none;
+    resize: none;
+}
+
+.msg_submit{
+    background: none;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #339AF0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: .4s;
+}
+
+.msg_submit:hover{
+    background-color: #6abafc;
+
+}
+
+
+#msg_container{
+    list-style: none;
+}
+
+li{
+    margin: 10px 10px;
+    width: 100%;
+}
+
+.name{
+    color: chocolate;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.msg .me{
+    background-color: #cce5fa;
+}
+.msg span{
+    margin-left: 15px;
+    color: blue;
+}
+
+
+@media only screen and (max-width:480px){
+
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        Room Key: <span class="room_key" id="<%= room %>"><%= room %></span>
+    </div>
+    <div class="view">
+        <ul id="msg_container" >
+            <li class="join"><span class="name">Chamick7</span> connected !!</li>
+            <li class="msg">Chamick7<span>Hello my freind</span></li>
+        </ul>
+    </div>
+    <div id="<%= name %>" class="info">
+        Name: <%= name %>
+    </div>
+    <div class="inbox">
+        <form id="inbox_form" >
+            <textarea class="inbox_msg" id="inbox_msg" name="msg" rows="1" type="text"></textarea>
+            <button class="msg_submit" type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js" integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ==" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
